@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.0" type="plugin" group="content">
+	<name>Content - ScriptureLinks</name>
+	<author>Mike Leeper</author>
+	<creationDate>September 2013</creationDate>
+	<copyright>Mike Leeper</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>web@mlwebtechnologies.com</authorEmail>
+	<authorUrl>http://www.mlwebtechnologies.com</authorUrl>
+	<version>3.0.0</version>
+	<description>Provides a link to the BibleGateway database for scripture verses inserted in content.  
+  View Readme.html in install zip file or in plugins/content/scripturelinks directory for syntax.</description>
+  <files>
+		<filename plugin="scripturelinks">scripturelinks.php</filename>
+		<filename>index.html</filename>
+		<folder>scripturelinks</folder>
+	</files>
+  <languages>
+  	<language tag="en-GB">en-GB.plg_content_scripturelinks.ini</language>
+  </languages>
+	<config>
+		<fields name="params" addfieldpath="/plugins/content/scripturelinks/scripturelinks/elements">
+    <fieldset name="basic">
+   	<field name="bible_version" type="list" default="51" label="Select Bible Version" description="Select a Bible version.">
+      <option value="69">	1550 Stephanus New Testament (NT)	</option>
+      <option value="68">	1881 Westcott-Hort New Testament (NT)	</option>
+      <option value="70">	1894 Scrivener New Testament (NT)	</option>
+      <option value="19">	1934 Vietnamese Bible	</option>
+      <option value="82">	1940 Bulgarian Bible	</option>
+      <option value="48">	21st Century King James Version	</option>
+      <option value="1">	Albanian Bible	</option>
+      <option value="8">	American Standard Version	</option>
+      <option value="45">	Amplified Bible	</option>
+      <option value="94">	Amuzgo de Guerrero (NT) </option>
+      <option value="43">	Ang Salita ng Diyos	(NT) </option>
+      <option value="ERV-AR">	Arabic Bible Easy-to-Read Version	</option>
+      <option value="28">	Arabic Life Application Bible	</option>
+      <option value="B21"> Bible 21 </option>
+      <option value="4">	Biblia Sacra Vulgata (with Apocrypha)	</option>
+      <option value="21">	Bulgarian Bible	</option>
+      <option value="ERV-BG">	Bulgarian New Testament: Easy-to-Read Version (NT)	</option>
+      <option value="98">	Cakchiquel Occidental (NT)	</option>
+      <option value="41">	Castilian (NT) </option>
+      <option value="90">	Chinanteco de Comaltepec (NT)	</option>
+      <option value="ERV-ZH">	Chinese New Testament: Easy-to-Read Version (NT)	</option>
+      <option value="80">	Chinese Union Version (Simplified) 	</option>
+      <option value="22">	Chinese Union Version (Traditional)	</option>
+      <option value="CEB">	Common English Version (with Apocrypha)	</option>
+      <option value="3">	Conferenza Episcopale Italiana (with Apocrypha)	</option>
+      <option value="46">	Contemporary English Version </option>
+      <option value="RMNN">	Cornilescu </option>
+      <option value="62">	Croatian Bible (NT) </option>
+      <option value="16">	Darby Translation	</option>
+      <option value="5">	Det Norsk Bibelselskap 1930	</option>
+      <option value="11">	Dette er Biblen pÃ¥ dansk	</option>
+      <option value="58">	Dios Habla Hoy (with Apocrypha)	</option>
+      <option value="63">	Douay-Rheims 1899 American Edition (with Apocrypha)	</option>
+      <option value="ERV">	Easy-to-Read Version	</option>
+      <option value="47">	English Standard Version	</option>
+      <option value="ESVUK">	English Standard Version Anglicised	</option>
+      <option value="GW"> God's Word Translation </option>
+      <option value="GNT"> Good News Translation (with Apocrypha) </option>
+      <option value="23">	Haitian Creole Version	</option>
+      <option value="HWP">	Hawai‘i Pidgin (NT)	</option>
+      <option value="30">	Het Boek	</option>
+      <option value="71">	Hiligaynon Bible	</option>
+      <option value="33">	Hoffnung für Alle (NT) </option>
+      <option value="77">	Holman Christian Standard Bible	</option>
+      <option value="17">	Hungarian KÃ¡roli	</option>
+      <option value="ERV-HU">	Hungarian New Testament: Easy-to-Read Version (NT)	</option>
+      <option value="18">	Icelandic Bible	</option>
+      <option value="103"> Jacalteco, Oriental (NT) </option>
+      <option value="PHILLIPS"> J.B. Phillips New Testament (NT) </option>
+      <option value="25">	João Ferreira de Almeida Atualizada	</option>
+      <option value="104"> Kekchi (NT) </option>
+      <option value="9">	King James Version	</option>
+      <option value="32">	La Bible du Semeur	</option>
+      <option value="59">	La Biblia de las Américas	</option>
+      <option value="55">	La Nuova Diodati	</option>
+      <option value="34">	La Parola è Vita (NT)	</option>
+      <option value="44">	Levande Bibeln	</option>
+      <option value="LEB">	Lexham English Bible (NT)	</option>
+      <option value="2">	Louis Segond	</option>
+      <option value="10">	Luther Bibel 1545	</option>
+      <option value="122">	Macedonian New Testament (NT)	</option>
+      <option value="88">	Mam, Central (NT) </option>
+      <option value="107">	Mam de Todos Santos Chuchumatán (NT) </option>
+      <option value="24">	Maori Bible	</option>
+      <option value="40">	Nádej pre kazdého	(NT) </option>
+      <option value="109"> Náhuatl de Guerrero (NT) </option>
+      <option value="NGU-DE">	Neue Genfer Übersetzung (NT)	</option>
+      <option value="49">	New American Standard Bible	</option>
+      <option value="NCV">	New Century Version	</option>
+      <option value="76">	New International Reader's Version	</option>
+      <option value="31">	New International Version	</option>
+      <option value="64">	New International Version - UK	</option>
+      <option value="NIV1984">	New International Version 1984	</option>
+      <option value="50">	New King James Version	</option>
+      <option value="74">	New Life Version	</option>
+      <option value="51">	New Living Translation	</option>
+      <option value="NEG1979">	Nouvelle Edition de Genève </option>
+      <option value="NBLH">	Nueva Biblia Latinoamericana de Hoy	</option>
+      <option value="NTV">	Nueva Traducción Viviente	</option>
+      <option value="42">	Nueva Versión Internacional	</option>
+      <option value="NR1994">	Nuova Riveduta 1994	</option>
+      <option value="NR2006">	Nuova Riveduta 2006	</option>
+      <option value="37">	O Livro	</option>
+      <option value="PDT">	Palabra de Dios para Todos	</option>
+      <option value="VFL">	Portuguese New Testament: Easy-to-Read Version (NT)	</option>
+      <option value="111"> Quiché, Centro Occidental (NT) </option>
+      <option value="56">	Reimer 2001 (NT) </option>
+      <option value="RVC">	Reina Valera Contemporánea	</option>
+      <option value="60">	Reina-Valera 1960	</option>
+      <option value="61">	Reina-Valera 1995	</option>
+      <option value="6">	Reina-Valera Antigua	</option>
+      <option value="38">	Romanian (NT)	</option>
+      <option value="ERV-RU">	Russian New Testament: Easy-to-Read Version (NT)	</option>
+      <option value="13">	Russian Synodal Version	</option>
+      <option value="SBLGNT">	SBL Greek New Testament (NT) </option>
+      <option value="SCH1951">	Schlachter 1951	</option>
+      <option value="SCH2000">	Schlachter 2000	</option>
+      <option value="SG21">	Segond 21	</option>
+      <option value="ERV-SR">	Serbian New Testament: Easy-to-Read Version (NT)	</option>
+      <option value="29">	Slovo na cestu (NT)	</option>
+      <option value="39">	Slovo Zhizny (NT)	</option>
+      <option value="7">	Svenska 1917	</option>
+      <option value="SFB">	Svenska Folkbibeln	</option>
+      <option value="75">	Swahili New Testament	(NT) </option>
+      <option value="ERV-TH">	Thai New Testament: Easy-to-Read Version (NT)	</option>
+      <option value="65">	The Message	</option>
+      <option value="81">	The Westminster Leningrad Codex (OT) </option>
+      <option value="72">	Today's New International Version	</option>
+      <option value="TLA">	Traducción en lenguaje actual (with Apocrypha)	</option>
+      <option value="27">	Ukrainian Bible	</option>
+      <option value="ERV-UK">	Ukrainian New Testament: Easy-to-Read Version (NT)	</option>
+      <option value="113"> Uspanteco Bible (NT) </option>
+      <option value="BPT">	Vietnamese New Testament: Easy-to-Read Version (NT)	</option>
+      <option value="73">	Worldwide English (NT)	</option>
+      <option value="WYC">	Wycliffe Bible	</option>
+      <option value="15">	Young's Literal Translation	</option>
+		</field>
+    <field name="replace_all" class="radio btn-group" type="radio" default="1" label="Replace All Links" description="Select Yes to replace all scripture references found in content with links to scripture readings.  Select No to replace only the scripture references in content by using the ScriptureLinks {bible} tags.">
+			<option value="0">No</option> 
+			<option value="1">Yes</option>
+		</field>
+    <field name="audio_link" class="radio btn-group" type="radio" default="1" label="Include Audio Link" description="Select to show an audio image link next to the scripture link.">
+			<option value="0">No</option> 
+			<option value="1">Yes</option>
+		</field>
+    <field name="audio_source_aid" type="list" default="3,4" label="Select Audio Bible Version" description="Select an audio Bible version.">
+			<option value="5,29">1979 Slovak Bible (NT) - Read by Joseph Hodul</option> 
+			<option value="7,31">Contemporary English Version (NT) - Read by Hosanna</option> 
+			<option value="8,21">English Standard Version - Read by Max McLean</option> 
+			<option value="8,32">English Standard Version - Read by Marquis Laughlin</option> 
+			<option value="4,28">Farsi New Testament - Read by Audio Scriptures</option> 
+			<option value="1,25">King James Version - Read by Max McLean</option> 
+			<option value="1,37">King James Version - Read by Dramatized</option> 
+			<option value="1,27">King James Version - Read by Paul Mims</option> 
+			<option value="6,30">La Biblia de las Americas (NT)- Read by Samuel Montoya H</option> 
+			<option value="16,40">Nueva Version Internacional - Read by Rafael Cruz</option> 
+			<option value="2,26">New American Standard Bible - Read by Dale McConachie</option> 
+			<option value="3,4">New International Version - Read by Max McLean</option> 
+			<option value="3,39">New International Version - Read by Charles Taylor</option> 
+			<option value="3,38">New International Version - Read by Dramatized</option> 
+			<option value="9,33">Reimer 2001 (NT) - Read by Elmer Reimer</option> 
+			<option value="15,34">Today's New International Version - Zondervan Multi-Voice Edition</option> 
+		</field>
+    <field name="com_link" class="radio btn-group" type="radio" default="1" label="Include Commentary Link" description="Select to show an commentary image link next to the scripture link.">
+			<option value="0">No</option> 
+			<option value="1">Yes</option>
+		</field>
+    <field name="com_source" type="list" default="mh" label="Select Bible Commentator" description="Select a commentator to use with the commentary image link.">
+			<option value="calvin">John Calvin</option> 
+			<option value="darby">John Darby</option> 
+			<option value="geneva">Geneva Study Bible</option> 
+			<option value="gill">John Gill</option> 
+			<option value="jfb">Jamieson, Faussett, and Brown</option> 
+			<option value="mh">Matthew Henry</option> 
+			<option value="mhc">Matthew Henry Concise</option> 
+			<option value="wesley">John Wesley</option> 
+    </field>
+    <field name="use_tooltip" class="radio btn-group" type="radio" default="1" label="Use tooltips" description="Select Yes to use a tooltip to display the scripture links/images.  Select No to display links/images integrated in text.">
+			<option value="0">No</option> 
+			<option value="1">Yes</option>
+		</field>
+    <field name="tooltip_type" class="radio btn-group" type="radio" default="true" label="Select tooltip type" description="Select a tooltip type to use.">
+			<option value="false">Tooltip box</option> 
+			<option value="true">Tooltip balloon</option>
+		</field>
+		<field name="font_color" type="text" label="Tooltip Text Color" default="#333" description="Default font color for Tooltip text" size="4"	/>
+		<field name="bg_color" type="text" label="Tooltip Background Color" default="#ddd" description="Default background color for Tooltip.  For Tooltip Box type only" size="4"	/>
+    <field name="use_sb" class="radio btn-group" type="radio" default="1" label="Use SqueezeBox effect on opening bible links" description="Select Yes to use SqueezeBox effect on opening Bible links.  Select No to open Bible links in a new browser window.">
+      <option value="0">No</option> 
+      <option value="1">Yes</option> 
+   </field>
+	</fieldset>
+		</fields>
+	</config>
+</extension>
